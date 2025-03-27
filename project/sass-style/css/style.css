@@ -1,0 +1,158 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+h1, h2, h3, h4 {
+  font-family: "DM Serif Display";
+}
+
+/* ─── Layout Containers ────────────────────────────── */
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: rgb(227, 167, 110);
+}
+
+#game-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#correct-guess-window {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ─── Game Letter Containers ────────────────────────────── */
+.small-box {
+  width: 20px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+  margin: 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: transparent;
+  position: relative;
+}
+
+.small-box::before {
+  position: absolute;
+  color: black;
+}
+
+.revealed {
+  color: black !important;
+}
+
+.revealed::before {
+  content: "";
+}
+
+/* button mixin  */
+input[type=button] {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #ddd;
+  cursor: pointer;
+}
+input[type=button]:hover {
+  background-color: #bbb;
+}
+input[type=button]:disabled {
+  background-color: #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+#end-message {
+  display: none;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*  Keyboard Keys  */
+#keyboard-keys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  flex: 1;
+}
+
+.key-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.key-disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.key-enabled {
+  cursor: pointer;
+}
+
+/*  Play Again Button  */
+#play-again-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 0;
+  font-size: 18px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#play-again-btn:hover {
+  background-color: #45a049;
+}
+
+/* ─── Images ────────────────────────────── */
+img {
+  width: 100%;
+  height: auto;
+}

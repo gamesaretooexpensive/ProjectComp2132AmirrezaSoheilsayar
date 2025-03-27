@@ -1,0 +1,37 @@
+# .htaccess 
+# ------------
+# the .htaccess file customizes how the Apache server will behave with directives
+# comments in .htaccess begin with a number sign (like this line does)
+# instructions without number sign in front are directives
+# learn more about .htaccess: https://www.askapache.com/htaccess/
+
+
+# ----------------------------------------
+# Ensure server uses correct character encoding
+AddDefaultCharset UTF-8
+
+
+# ----------------------------------------
+# Server will use British Columbia time zone
+SetEnv TZ Canada/Pacific
+
+
+# ----------------------------------------
+# Enable directory browsing
+#	use: Options All +Indexes
+# Disable directory browsing
+# 	use: Options All -Indexes
+Options All +Indexes
+
+
+# ----------------------------------------
+#	EXERCISE
+#
+# Use .htaccess to handle the 404 Page Not Found
+# Direct errors to a specified path			
+# ErrorDocument <errorNumber> <path>
+# Note: use a server-root based path here
+
+
+# ----------------------------------------
+ErrorDocument 404 /project/html/error/error.html
