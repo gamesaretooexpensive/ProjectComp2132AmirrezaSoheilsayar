@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COMP 2132 TERM PROJECT - AMIRREZA SOHEILSAYAR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../sass-style/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../javascript/hangman.js" defer></script>
+    <script src="../javascript/replace-name.js" defer></script>
+
+    
+
+</head>
+
+<body>
+
+    <header id="header-style">
+        <h1>COMP 2132: TERM PROJECT</h1>
+    </header>
+
+    <div class="content">
+        <main>
+            <div id="game-window">
+                <img id="hangman-image" src="../images/hangman-00.png" alt="hangman">
+
+                <div id="correct-guess-window">
+                    <ul id="letters-window">
+
+                    </ul>
+                </div>
+            </div>
+            
+            <fieldset id="keyboard-keys">
+
+                <p id="hint"></p>
+
+                <div class="key-row">
+                    <input type="button" value="Q" name="key" id="Q-Key">
+                    <input type="button" value="W" name="key" id="W-Key">
+                    <input type="button" value="E" name="key" id="E-Key">
+                    <input type="button" value="R" name="key" id="R-Key">
+                    <input type="button" value="T" name="key" id="T-Key">
+                    <input type="button" value="Y" name="key" id="Y-Key">
+                    <input type="button" value="U" name="key" id="U-Key">
+                    <input type="button" value="I" name="key" id="I-Key">
+                    <input type="button" value="O" name="key" id="O-Key">
+                    <input type="button" value="P" name="key" id="P-Key">
+                </div>
+            
+                <div class="key-row">
+                    <input type="button" value="A" name="key" id="A-Key">
+                    <input type="button" value="S" name="key" id="S-Key">
+                    <input type="button" value="D" name="key" id="D-Key">
+                    <input type="button" value="F" name="key" id="F-Key">
+                    <input type="button" value="G" name="key" id="G-Key">
+                    <input type="button" value="H" name="key" id="H-Key">
+                    <input type="button" value="J" name="key" id="J-Key">
+                    <input type="button" value="K" name="key" id="K-Key">
+                    <input type="button" value="L" name="key" id="L-Key">
+                </div>
+            
+                <div class="key-row">
+                    <input type="button" value="Z" name="key" id="Z-Key">
+                    <input type="button" value="X" name="key" id="X-Key">
+                    <input type="button" value="C" name="key" id="C-Key">
+                    <input type="button" value="V" name="key" id="V-Key">
+                    <input type="button" value="B" name="key" id="B-Key">
+                    <input type="button" value="N" name="key" id="N-Key">
+                    <input type="button" value="M" name="key" id="M-Key">
+
+                </div>
+                <input type="button" value="Play Again!" name="" id="play-again-btn">
+
+
+            </fieldset>
+                
+                
+            <div id="guessCounter"></div>
+
+            <div id="end-message"></div>
+            
+        </main>
+    </div>
+
+    <footer>
+        <h2 id="javascript_message"></h2>
+        <h2>Student Number: A00934290</h2>
+        <h2>Course: COMP 2132</h2>
+        <h2>Instructor: Jeff Parker</h2>
+    </footer>
+</body>
+
+</html>
